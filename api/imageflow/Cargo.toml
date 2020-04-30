@@ -1,0 +1,29 @@
+[package]
+name = "index"
+version = "0.1.0"
+authors = [ "Lilith River <lilith@imazen.io>" ]
+edition = "2018"
+
+[dependencies]
+http = "0.1"
+url = "2"
+now_lambda = "*"
+regex = "1"
+rust-s3 = "0.19.4"
+
+
+  [dependencies.imageflow_core]
+  git = "https://github.com/imazen/imageflow"
+  tag = "v1.3.6-rc36"
+
+  [dependencies.imageflow_types]
+  git = "https://github.com/imazen/imageflow"
+  tag = "v1.3.6-rc36"
+
+[lib]
+name = "imageflow"
+path = "imageflow.rs"
+
+[[bin]]
+name = "imageflow"
+path = "/home/lilith/imazen/imageflow-now/api/imageflow/imageflow.rs"

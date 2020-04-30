@@ -1,0 +1,11 @@
+{
+	"functions": {
+		"api/**/*.rs": {
+			"runtime": "now-rust@2.0.0"
+		}
+	},
+    "routes": [
+     {  "src": "/api/imageflow/(?<path>.*)", 
+        "dest": "/api/imageflow/imageflow?imageflow_path=$path" }
+    ]
+}
